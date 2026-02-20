@@ -19,7 +19,7 @@ const randomValue = (array) => array[randomNumber(array)];
 
 
 function excuse() {
-return `OMG! you will not believe me but...<br> ${randomValue(who)} ${randomValue(action)} ${randomValue(what)} ${randomValue(when)}`;
+return `<br> ${randomValue(who)} ${randomValue(action)} ${randomValue(what)} ${randomValue(when)}`;
 
 }
 

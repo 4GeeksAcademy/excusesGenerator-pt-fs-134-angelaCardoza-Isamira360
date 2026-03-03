@@ -19,7 +19,18 @@ const randomValue = (array) => array[randomNumber(array)];
 
 
 function excuse() {
-return `<br> ${randomValue(who)} ${randomValue(action)} ${randomValue(what)} ${randomValue(when)}`;
+
+  const parts=[who, action, what, when]
+
+let words='';
+
+for (let part of parts){
+
+words+= randomValue(part)+ ' ';
+}
+
+
+return `<br> ${words.trim()}`;
 
 }
 
